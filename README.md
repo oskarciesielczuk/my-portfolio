@@ -1,4 +1,7 @@
-# my-portfolio
-# 1. CompactList
+# Oskar's Portfolio
+## 1. CompactList
 This file contains the implementation of a class CompactList, which is used to compactly represent sets of consecutive integers. The way it works is that the first element in the compact list is the first integer that is included in the set, and the second element is the first integer not in the set, and so on. So, for example, the compact list [1,5,10,13] represents the set {1,2,3,4} U {10,11,12}. The compact lists contain elements from a universal domain, denoted by [MIN,MAX]. Therefore, we can also have an odd length compact list, which means that all integers between the last element of the compact list and MAX are in the set.
 The class also supports a range of functions that you would expect to be able to do with normal sets: for example, we can take the union of two compact lists, A and B, which should output the compact list which represents the union of the sets represented by A and B.
+
+## 2. Recently Inserted Accounts
+This is a Lightning Web Component, which are used on the Salesforce Platform. The component is made up of 3 key files. insertAccs.html gives the component it's visual structure by displaying buttons, badges and tables. insertedAccs.js uses Javascript to carry out certain behaviours when the user interacts with the component. It counts the number of accounts recently inserted into the database when the "Refresh Count" button is clicked. It also makes use of a controller class, AccountController.cls, which fetches the recently added accounts from the database, and passes it to the component, so that they can be displayed in the table.
