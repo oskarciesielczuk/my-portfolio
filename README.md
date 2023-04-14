@@ -1,1 +1,4 @@
 # my-portfolio
+# 1. CompactList
+This file contains the implementation of a class CompactList, which is used to compactly represent sets of consecutive integers. The way it works is that the first element in the compact list is the first integer that is included in the set, and the second element is the first integer not in the set, and so on. So, for example, the comact list [1,5,10,13] represents the set {1,2,3,4} U {10,11,12}. The compact lists contains elements from a universal domain, denoted by [MIN,MAX]. Therefore, we can also have odd length compact lists, which mean that all integers between the last element of a compact list and MAX are in the set.
+The class also supports a range of functions that you would expect to be able to do with normal sets: for example, we can take the union of two compact lists, A and B, which should output the compact list which represents the union of the sets represented by A and B.
