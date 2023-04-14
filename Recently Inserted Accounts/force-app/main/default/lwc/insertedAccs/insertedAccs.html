@@ -1,0 +1,10 @@
+<template>
+    <div class="slds-box">
+        <lightning-badge class="slds-m-right_medium" label={count}></lightning-badge>
+        <lightning-button label="Refresh Count" onclick={countSelected}></lightning-button>
+    </div>
+    <div>
+        <lightning-datatable key-field="id" data={accList} columns={columns}>
+        </lightning-datatable>
+    </div>   
+</template>
