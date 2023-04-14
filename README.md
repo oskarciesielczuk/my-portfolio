@@ -5,3 +5,6 @@ The class also supports a range of functions that you would expect to be able to
 
 ## 2. Recently Inserted Accounts
 This is a Lightning Web Component, which are used on the Salesforce Platform. The component is made up of 3 key files. insertAccs.html gives the component it's visual structure by displaying buttons, badges and tables. insertedAccs.js uses Javascript to carry out certain behaviours when the user interacts with the component. It counts the number of accounts recently inserted into the database when the "Refresh Count" button is clicked. It also makes use of a controller class, AccountController.cls, which fetches the recently added accounts from the database, and passes it to the component, so that they can be displayed in the table.
+
+## Speller
+The purpose of this program is to go through a given text, and identify all the misspelled words. Misspelled words are those that don't exist in the dictionary that is passed into the program. dictionary.h defines the maximum length of a word in the dictionary, as well as the prototypes for functions used in dictionary.c. dictionary.c uses a hash table to keep track of the words in the dictionary we choose to load in. speller.c carries out the spell check, and benchmarks the time taken to load and unload the dictionary, and check spelling.
